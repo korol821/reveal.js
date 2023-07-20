@@ -7,3 +7,4 @@ const through = require('through2');
 const qunit = require('node-qunit-puppeteer')
 
 const {rollup} = require('rollup')
+const {terser} = require('rollup-plugin-terser')
