@@ -8,3 +8,5 @@ const qunit = require('node-qunit-puppeteer')
 
 const {rollup} = require('rollup')
 const {terser} = require('rollup-plugin-terser')
+const babel = require('@rollup/plugin-babel').default
+const commonjs = require('@rollup/plugin-commonjs')
