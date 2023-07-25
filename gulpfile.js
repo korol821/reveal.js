@@ -14,3 +14,4 @@ const resolve = require('@rollup/plugin-node-resolve').default
 const sass = require('sass')
 
 const gulp = require('gulp')
+const tap = require('gulp-tap')
