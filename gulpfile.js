@@ -15,3 +15,4 @@ const sass = require('sass')
 
 const gulp = require('gulp')
 const tap = require('gulp-tap')
+const zip = require('gulp-zip')
