@@ -23,3 +23,4 @@ const connect = require('gulp-connect')
 const autoprefixer = require('gulp-autoprefixer')
 
 const root = yargs.argv.root || '.'
+const port = yargs.argv.port || 8000
