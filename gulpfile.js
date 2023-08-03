@@ -25,3 +25,5 @@ const autoprefixer = require('gulp-autoprefixer')
 const root = yargs.argv.root || '.'
 const port = yargs.argv.port || 8000
 const host = yargs.argv.host || 'localhost'
+
+const banner = `/*!
