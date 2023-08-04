@@ -27,3 +27,4 @@ const port = yargs.argv.port || 8000
 const host = yargs.argv.host || 'localhost'
 
 const banner = `/*!
+* reveal.js ${pkg.version}
