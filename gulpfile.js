@@ -28,3 +28,5 @@ const host = yargs.argv.host || 'localhost'
 
 const banner = `/*!
 * reveal.js ${pkg.version}
+* ${pkg.homepage}
+* MIT licensed
