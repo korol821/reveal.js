@@ -30,3 +30,5 @@ const banner = `/*!
 * reveal.js ${pkg.version}
 * ${pkg.homepage}
 * MIT licensed
+*
+* Copyright (C) 2011-2023 Hakim El Hattab, https://hakim.se
