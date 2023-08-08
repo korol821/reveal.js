@@ -36,3 +36,6 @@ const banner = `/*!
 
 // Prevents warnings from opening too many test pages
 process.setMaxListeners(20);
+
+const babelConfig = {
+    babelHelpers: 'bundled',
