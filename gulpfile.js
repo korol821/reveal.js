@@ -39,3 +39,5 @@ process.setMaxListeners(20);
 
 const babelConfig = {
     babelHelpers: 'bundled',
+ ignore: ['node_modules'],
+    compact: false,
