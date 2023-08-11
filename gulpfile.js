@@ -41,3 +41,5 @@ const babelConfig = {
     babelHelpers: 'bundled',
  ignore: ['node_modules'],
     compact: false,
+ extensions: ['.js', '.html'],
+    plugins: [
