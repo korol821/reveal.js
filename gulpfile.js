@@ -43,3 +43,5 @@ const babelConfig = {
     compact: false,
  extensions: ['.js', '.html'],
     plugins: [
+      'transform-html-import-to-string'
+    ],
