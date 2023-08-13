@@ -45,3 +45,5 @@ const babelConfig = {
     plugins: [
       'transform-html-import-to-string'
     ],
+    presets: [[
+        '@babel/preset-env',
