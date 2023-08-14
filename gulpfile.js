@@ -47,3 +47,5 @@ const babelConfig = {
     ],
     presets: [[
         '@babel/preset-env',
+  {
+            corejs: 3,
