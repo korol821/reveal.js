@@ -49,3 +49,5 @@ const babelConfig = {
         '@babel/preset-env',
   {
             corejs: 3,
+     useBuiltIns: 'usage',
+            modules: false
