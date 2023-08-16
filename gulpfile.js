@@ -51,3 +51,6 @@ const babelConfig = {
             corejs: 3,
      useBuiltIns: 'usage',
             modules: false
+    }
+    ]]
+};
