@@ -54,3 +54,4 @@ const babelConfig = {
     }
     ]]
 };
+// Our ES module bundle only targets newer browsers with
