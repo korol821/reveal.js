@@ -58,3 +58,5 @@ const babelConfig = {
 // module support. Browsers are targeted explicitly instead
 // of using the "esmodule: true" target since that leads to
 // polyfilling older browsers and a larger bundle.
+const babelConfigESM = JSON.parse( JSON.stringify( babelConfig ) );
+babelConfigESM.presets[0][1].targets = { browsers: [
