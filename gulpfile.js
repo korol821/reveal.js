@@ -60,3 +60,4 @@ const babelConfig = {
 // polyfilling older browsers and a larger bundle.
 const babelConfigESM = JSON.parse( JSON.stringify( babelConfig ) );
 babelConfigESM.presets[0][1].targets = { browsers: [
+  'last 2 Chrome versions',
