@@ -62,3 +62,5 @@ const babelConfigESM = JSON.parse( JSON.stringify( babelConfig ) );
 babelConfigESM.presets[0][1].targets = { browsers: [
   'last 2 Chrome versions',
 'last 2 Safari versions',
+ 'last 2 iOS versions',
+    'last 2 Firefox versions',
