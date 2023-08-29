@@ -64,3 +64,7 @@ babelConfigESM.presets[0][1].targets = { browsers: [
 'last 2 Safari versions',
  'last 2 iOS versions',
     'last 2 Firefox versions',
+'last 2 Edge versions',
+] };
+
+let cache = {};
