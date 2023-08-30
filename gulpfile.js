@@ -68,3 +68,6 @@ babelConfigESM.presets[0][1].targets = { browsers: [
 ] };
 
 let cache = {};
+
+// Creates a bundle with broad browser support, exposed
+// as UMD
