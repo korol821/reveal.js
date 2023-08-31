@@ -71,3 +71,5 @@ let cache = {};
 
 // Creates a bundle with broad browser support, exposed
 // as UMD
+gulp.task('js-es5', () => {
+    return rollup({
