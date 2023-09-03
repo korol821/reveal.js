@@ -73,3 +73,5 @@ let cache = {};
 // as UMD
 gulp.task('js-es5', () => {
     return rollup({
+ cache: cache.umd,
+        input: 'js/index.js',
