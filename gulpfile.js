@@ -75,3 +75,5 @@ gulp.task('js-es5', () => {
     return rollup({
  cache: cache.umd,
         input: 'js/index.js',
+ plugins: [
+            resolve(),
