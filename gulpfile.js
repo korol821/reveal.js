@@ -77,3 +77,5 @@ gulp.task('js-es5', () => {
         input: 'js/index.js',
  plugins: [
             resolve(),
+  commonjs(),
+            babel( babelConfig ),
