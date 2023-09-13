@@ -79,3 +79,6 @@ gulp.task('js-es5', () => {
             resolve(),
   commonjs(),
             babel( babelConfig ),
+  terser()
+        ]
+    }).then( bundle => {
