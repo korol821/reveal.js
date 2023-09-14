@@ -82,3 +82,5 @@ gulp.task('js-es5', () => {
   terser()
         ]
     }).then( bundle => {
+  cache.umd = bundle.cache;
+        return bundle.write({
