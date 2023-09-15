@@ -84,3 +84,5 @@ gulp.task('js-es5', () => {
     }).then( bundle => {
   cache.umd = bundle.cache;
         return bundle.write({
+ name: 'Reveal',
+            file: './dist/reveal.js',
