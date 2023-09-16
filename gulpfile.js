@@ -86,3 +86,5 @@ gulp.task('js-es5', () => {
         return bundle.write({
  name: 'Reveal',
             file: './dist/reveal.js',
+ format: 'umd',
+            banner: banner,
