@@ -88,3 +88,9 @@ gulp.task('js-es5', () => {
             file: './dist/reveal.js',
  format: 'umd',
             banner: banner,
+  sourcemap: true
+        });
+    });
+})
+
+// Creates an ES module bundle
