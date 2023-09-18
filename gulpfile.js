@@ -94,3 +94,5 @@ gulp.task('js-es5', () => {
 })
 
 // Creates an ES module bundle
+gulp.task('js-es6', () => {
+    return rollup({
