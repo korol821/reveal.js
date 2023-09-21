@@ -101,3 +101,7 @@ gulp.task('js-es6', () => {
         plugins: [
             resolve(),
             commonjs(),
+ babel( babelConfigESM ),
+            terser()
+        ]
+    }).then( bundle => {
