@@ -105,3 +105,5 @@ gulp.task('js-es6', () => {
             terser()
         ]
     }).then( bundle => {
+ cache.esm = bundle.cache;
+        return bundle.write({
