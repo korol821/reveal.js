@@ -107,3 +107,6 @@ gulp.task('js-es6', () => {
     }).then( bundle => {
  cache.esm = bundle.cache;
         return bundle.write({
+file: './dist/reveal.esm.js',
+            format: 'es',
+            banner: banner,
