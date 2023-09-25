@@ -110,3 +110,8 @@ gulp.task('js-es6', () => {
 file: './dist/reveal.esm.js',
             format: 'es',
             banner: banner,
+  sourcemap: true
+        });
+    });
+})
+gulp.task('js', gulp.parallel('js-es5', 'js-es6'));
