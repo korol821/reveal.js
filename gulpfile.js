@@ -115,3 +115,7 @@ file: './dist/reveal.esm.js',
     });
 })
 gulp.task('js', gulp.parallel('js-es5', 'js-es6'));
+
+// Creates a UMD and ES module bundle for each of our
+// built-in plugins
+gulp.task('plugins', () => {
