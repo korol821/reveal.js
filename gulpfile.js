@@ -119,3 +119,5 @@ gulp.task('js', gulp.parallel('js-es5', 'js-es6'));
 // Creates a UMD and ES module bundle for each of our
 // built-in plugins
 gulp.task('plugins', () => {
+   return Promise.all([
+        { name: 'RevealHighlight', input: './plugin/highlight/plugin.js', output: './plugin/highlight/highlight' },
