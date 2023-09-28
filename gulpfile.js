@@ -121,3 +121,4 @@ gulp.task('js', gulp.parallel('js-es5', 'js-es6'));
 gulp.task('plugins', () => {
    return Promise.all([
         { name: 'RevealHighlight', input: './plugin/highlight/plugin.js', output: './plugin/highlight/highlight' },
+ { name: 'RevealMarkdown', input: './plugin/markdown/plugin.js', output: './plugin/markdown/markdown' },
