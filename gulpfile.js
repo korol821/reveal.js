@@ -122,3 +122,5 @@ gulp.task('plugins', () => {
    return Promise.all([
         { name: 'RevealHighlight', input: './plugin/highlight/plugin.js', output: './plugin/highlight/highlight' },
  { name: 'RevealMarkdown', input: './plugin/markdown/plugin.js', output: './plugin/markdown/markdown' },
+   { name: 'RevealSearch', input: './plugin/search/plugin.js', output: './plugin/search/search' },
+        { name: 'RevealNotes', input: './plugin/notes/plugin.js', output: './plugin/notes/notes' },
