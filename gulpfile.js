@@ -124,3 +124,4 @@ gulp.task('plugins', () => {
  { name: 'RevealMarkdown', input: './plugin/markdown/plugin.js', output: './plugin/markdown/markdown' },
    { name: 'RevealSearch', input: './plugin/search/plugin.js', output: './plugin/search/search' },
         { name: 'RevealNotes', input: './plugin/notes/plugin.js', output: './plugin/notes/notes' },
+  { name: 'RevealZoom', input: './plugin/zoom/plugin.js', output: './plugin/zoom/zoom' },
