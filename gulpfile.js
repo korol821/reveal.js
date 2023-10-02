@@ -129,3 +129,7 @@ gulp.task('plugins', () => {
     ].map( plugin => {
         return rollup({
                 cache: cache[plugin.input],
+  input: plugin.input,
+                plugins: [
+                    resolve(),
+                    commonjs(),
