@@ -133,3 +133,6 @@ gulp.task('plugins', () => {
                 plugins: [
                     resolve(),
                     commonjs(),
+ babel({
+                        ...babelConfig,
+                        ignore: [/node_modules\/(?!(highlight\.js|marked)\/).*/],
