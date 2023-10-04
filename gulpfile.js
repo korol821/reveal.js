@@ -136,3 +136,8 @@ gulp.task('plugins', () => {
  babel({
                         ...babelConfig,
                         ignore: [/node_modules\/(?!(highlight\.js|marked)\/).*/],
+   }),
+                    terser()
+                ]
+            }).then( bundle => {
+                cache[plugin.input] = bundle.cache;
