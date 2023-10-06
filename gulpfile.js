@@ -143,3 +143,5 @@ gulp.task('plugins', () => {
                 cache[plugin.input] = bundle.cache;
   bundle.write({
                     file: plugin.output + '.esm.js',
+ name: plugin.name,
+                    format: 'es'
