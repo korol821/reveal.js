@@ -149,3 +149,4 @@ gulp.task('plugins', () => {
 
                 bundle.write({
                     file: plugin.output + '.js',
+ name: plugin.name,
