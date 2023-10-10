@@ -150,3 +150,10 @@ gulp.task('plugins', () => {
                 bundle.write({
                     file: plugin.output + '.js',
  name: plugin.name,
+    format: 'umd'
+                })
+            });
+    } ));
+})
+
+// a custom pipeable step to transform Sass to CSS
