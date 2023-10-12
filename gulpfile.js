@@ -159,3 +159,7 @@ gulp.task('plugins', () => {
 // a custom pipeable step to transform Sass to CSS
 function compileSass() {
   return through.obj( ( vinylFile, encoding, callback ) => {
+ const transformedFile = vinylFile.clone();
+
+    sass.render({
+        data: transformedFile.contents.toString(),
