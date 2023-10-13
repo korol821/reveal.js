@@ -163,3 +163,5 @@ function compileSass() {
 
     sass.render({
         data: transformedFile.contents.toString(),
+ file: transformedFile.path,
+    }, ( err, result ) => {
