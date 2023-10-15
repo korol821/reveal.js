@@ -165,3 +165,8 @@ function compileSass() {
         data: transformedFile.contents.toString(),
  file: transformedFile.path,
     }, ( err, result ) => {
+    if( err ) {
+            callback(err);
+        }
+        else {
+            transformedFile.extname = '.css';
