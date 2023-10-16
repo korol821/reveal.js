@@ -170,3 +170,5 @@ function compileSass() {
         }
         else {
             transformedFile.extname = '.css';
+   transformedFile.contents = result.css;
+            callback( null, transformedFile );
