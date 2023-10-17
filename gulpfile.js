@@ -172,3 +172,9 @@ function compileSass() {
             transformedFile.extname = '.css';
    transformedFile.contents = result.css;
             callback( null, transformedFile );
+ }
+    });
+  });
+}
+
+gulp.task('css-themes', () => gulp.src(['./css/theme/source/*.{sass,scss}'])
