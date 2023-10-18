@@ -178,3 +178,7 @@ function compileSass() {
 }
 
 gulp.task('css-themes', () => gulp.src(['./css/theme/source/*.{sass,scss}'])
+  .pipe(compileSass())
+        .pipe(gulp.dest('./dist/theme')))
+
+gulp.task('css-core', () => gulp.src(['css/reveal.scss'])
