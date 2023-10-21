@@ -189,3 +189,7 @@ gulp.task('css-core', () => gulp.src(['css/reveal.scss'])
     .pipe(gulp.dest('./dist')))
 
 gulp.task('css', gulp.parallel('css-themes', 'css-core'))
+
+gulp.task('qunit', () => {
+
+    let serverConfig = {
