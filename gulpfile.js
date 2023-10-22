@@ -193,3 +193,6 @@ gulp.task('css', gulp.parallel('css-themes', 'css-core'))
 gulp.task('qunit', () => {
 
     let serverConfig = {
+    root,
+        port: 8009,
+        host: 'localhost
