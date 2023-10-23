@@ -196,3 +196,7 @@ gulp.task('qunit', () => {
     root,
         port: 8009,
         host: 'localhost
+  name: 'test-server'
+    }
+
+    let server = connect.server( serverConfig )
