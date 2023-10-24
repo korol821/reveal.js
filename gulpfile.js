@@ -200,3 +200,7 @@ gulp.task('qunit', () => {
     }
 
     let server = connect.server( serverConfig )
+
+    let testFiles = glob.sync('test/*.html' )
+
+    let totalTests = 0;
