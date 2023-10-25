@@ -204,3 +204,6 @@ gulp.task('qunit', () => {
     let testFiles = glob.sync('test/*.html' )
 
     let totalTests = 0;
+ let failingTests = 0;
+
+    let tests = Promise.all( testFiles.map( filename => {
