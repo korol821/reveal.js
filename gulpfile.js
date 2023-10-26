@@ -207,3 +207,5 @@ gulp.task('qunit', () => {
  let failingTests = 0;
 
     let tests = Promise.all( testFiles.map( filename => {
+   return new Promise( ( resolve, reject ) => {
+            qunit.runQunitPuppeteer({
