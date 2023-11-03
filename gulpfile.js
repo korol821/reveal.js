@@ -222,3 +222,6 @@ gulp.task('qunit', () => {
   }
                     else {
                         console.log(`${'✔'} ${filename} [${result.stats.passed}/${result.stats.total}] in ${result.stats.runtime}ms`.green);
+   }
+
+                    totalTests += result.stats.total;
