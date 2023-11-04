@@ -225,3 +225,4 @@ gulp.task('qunit', () => {
    }
 
                     totalTests += result.stats.total;
+ failingTests += result.stats.failed;
