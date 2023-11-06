@@ -231,3 +231,9 @@ gulp.task('qunit', () => {
                 })
                 .catch(error => {
                     console.error(error);
+   reject();
+                });
+        } )
+    } ) );
+
+    return new Promise( ( resolve, reject ) => {
