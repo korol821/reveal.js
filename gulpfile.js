@@ -237,3 +237,5 @@ gulp.task('qunit', () => {
     } ) );
 
     return new Promise( ( resolve, reject ) => {
+    qunit.runQunitPuppeteer({
+                targetUrl: `http://${serverConfig.host}:${serverConfig.port}/${filename}`,
