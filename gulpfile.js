@@ -241,3 +241,6 @@ gulp.task('qunit', () => {
                 targetUrl: `http://${serverConfig.host}:${serverConfig.port}/${filename}`,
  timeout: 20000,
                 redirectConsole: false,
+  puppeteerArgs: ['--allow-file-access-from-files']
+            })
+                .then(result => {
