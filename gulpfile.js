@@ -244,3 +244,5 @@ gulp.task('qunit', () => {
   puppeteerArgs: ['--allow-file-access-from-files']
             })
                 .then(result => {
+   if( result.stats.failed > 0 ) {
+                        console.log(`${'!'} ${filename} [${result.stats.passed}/${result.stats.total}] in ${result.stats.runtime}ms`.red);
