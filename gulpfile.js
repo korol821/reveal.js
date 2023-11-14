@@ -257,3 +257,6 @@ gulp.task('qunit', () => {
    failingTests += result.stats.failed;
 
                     resolve();
+          })
+                .catch(error => {
+                    console.error(error);
