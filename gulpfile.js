@@ -270,3 +270,6 @@ gulp.task('qunit', () => {
         tests.then( () => {
                 if( failingTests > 0 ) {
                     reject( new Error(`${failingTests}/${totalTests} tests failed`.red) );
+  }
+                else {
+                    console.log(`${'✔'} Passed ${totalTests} tests`.green.bold);
