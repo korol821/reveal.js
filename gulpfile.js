@@ -273,3 +273,7 @@ gulp.task('qunit', () => {
   }
                 else {
                     console.log(`${'✔'} Passed ${totalTests} tests`.green.bold);
+   resolve();
+                }
+            } )
+            .catch( () => {
