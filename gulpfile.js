@@ -280,3 +280,10 @@ gulp.task('qunit', () => {
     reject();
             } )
             .finally( () => {
+   server.close();
+            } );
+
+    } );
+} )
+
+gulp.task('eslint', () => gulp.src(['./js/**', 'gulpfile.js'])
