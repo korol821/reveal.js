@@ -287,3 +287,7 @@ gulp.task('qunit', () => {
 } )
 
 gulp.task('eslint', () => gulp.src(['./js/**', 'gulpfile.js'])
+  .pipe(eslint())
+        .pipe(eslint.format()))
+
+gulp.task('test', gulp.series( 'eslint', 'qunit' ))
