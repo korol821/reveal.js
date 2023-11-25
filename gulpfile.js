@@ -301,3 +301,5 @@ gulp.task('package', gulp.series(() =>
     gulp.src(
         [
             './index.html',
+ './dist/**',
+            './lib/**',
