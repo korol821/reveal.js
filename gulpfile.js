@@ -308,3 +308,5 @@ gulp.task('package', gulp.series(() =>
  './**/*.md'
         ],
         { base: './' }
+ )
+    .pipe(zip('reveal-js-presentation.zip')).pipe(gulp.dest('./'))
