@@ -310,3 +310,7 @@ gulp.task('package', gulp.series(() =>
         { base: './' }
  )
     .pipe(zip('reveal-js-presentation.zip')).pipe(gulp.dest('./'))
+
+))
+
+gulp.task('reload', () => gulp.src(['index.html'])
