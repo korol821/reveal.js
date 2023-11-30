@@ -314,3 +314,6 @@ gulp.task('package', gulp.series(() =>
 ))
 
 gulp.task('reload', () => gulp.src(['index.html'])
+ .pipe(connect.reload()));
+
+gulp.task('serve', () => {
