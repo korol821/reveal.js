@@ -317,3 +317,12 @@ gulp.task('reload', () => gulp.src(['index.html'])
  .pipe(connect.reload()));
 
 gulp.task('serve', () => {
+
+    connect.server({
+        root: root,
+        port: port,
+        host: host,
+        livereload: true
+    })
+
+    const slidesRoot = root.endsWith('/') ? root : root + '/'
