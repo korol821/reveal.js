@@ -330,3 +330,6 @@ gulp.task('serve', () => {
         slidesRoot + '**/*.html',
   slidesRoot + '**/*.md',
         `!${slidesRoot}**/node_modules/**`, // ignore node_modules
+ ], gulp.series('reload'))
+
+    gulp.watch(['js/**'], gulp.series('js', 'reload', 'eslint'))
