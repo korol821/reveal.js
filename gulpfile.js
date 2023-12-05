@@ -333,3 +333,5 @@ gulp.task('serve', () => {
  ], gulp.series('reload'))
 
     gulp.watch(['js/**'], gulp.series('js', 'reload', 'eslint'))
+
+    gulp.watch(['plugin/**/plugin.js', 'plugin/**/*.html'], gulp.series('plugins', 'reload'))
